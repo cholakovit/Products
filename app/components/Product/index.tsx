@@ -1,8 +1,7 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const Product = ({ product }: { product: Product }) => {
-
   return (
     <div className="bg-slate-50 shadow-lg rounded-lg overflow-hidden">
       <Image
@@ -11,8 +10,8 @@ const Product = ({ product }: { product: Product }) => {
         layout="responsive"
         width={0}
         height={0}
-        objectFit="cover" 
-        objectPosition="center" 
+        objectFit="cover"
+        objectPosition="center"
       />
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
@@ -29,12 +28,16 @@ const Product = ({ product }: { product: Product }) => {
           </div>
         ))}
         <div className="flex justify-between items-center mt-4">
-          <span className="text-xl font-bold text-gray-900">${product.price.regular}</span>
-          <button className="px-3 py-1 bg-blue-500 text-white text-xs font-bold uppercase rounded hover:bg-blue-600">Add to Cart</button>
+          <span className="text-xl font-bold text-gray-900">
+            ${product.price.regular}
+          </span>
+          <button className="px-3 py-1 bg-blue-500 text-white text-xs font-bold uppercase rounded hover:bg-blue-600">
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;

@@ -1,4 +1,3 @@
-
 export const getProductsQuery = `
 fragment StoreProduct on Product {
   id
@@ -41,4 +40,4 @@ query GetProducts($filters: [CatalogFilter!]) {
     }
   }
 }
-`
+`;
